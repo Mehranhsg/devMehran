@@ -1,0 +1,165 @@
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hero img {
+  margin-top: 20px;
+  height: 270px;
+  width: 230px;
+  border-radius: 100%;
+}
+
+.hero h1 {
+  text-align: center;
+  width: 70%;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.hero h1 span {
+  background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  width: 55%;
+  text-align: center;
+  font-size: 16px;
+}
+
+.hero-action {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.hero-connect,
+.hero-resume {
+  padding: 13px 45px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hero-connect {
+  background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.hero-resume {
+  background: #ffffff;
+  color: #555;
+  border: 2px solid #DF8908;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.hero-connect:hover,
+.hero-resume:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 36px;
+    width: 80%; /* Reduce width for smaller screens */
+  }
+
+  .hero img {
+    height: 220px;
+    width: 200px;
+  }
+
+  .hero p {
+    width: 70%; /* Make paragraph width smaller on tablets */
+    font-size: 15px;
+  }
+
+  .hero-action {
+    gap: 15px; /* Reduced gap between buttons */
+    font-size: 18px;
+  }
+
+  .hero-connect,
+  .hero-resume {
+    padding: 12px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    gap: 20px;
+    text-align: center; /* Center align everything on mobile */
+  }
+
+  .hero h1 {
+    font-size: 30px;
+    width: 90%;
+  }
+
+  .hero img {
+    height: 180px;
+    width: 180px; /* Adjust image size for mobile */
+  }
+
+  .hero p {
+    width: 80%;
+    font-size: 14px;
+  }
+
+  .hero-action {
+    flex-direction: column; /* Stack the buttons vertically */
+    gap: 10px;
+    font-size: 16px;
+  }
+
+  .hero-connect,
+  .hero-resume {
+    padding: 10px 35px; /* Smaller buttons for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    gap: 15px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+    width: 90%;
+  }
+
+  .hero img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .hero p {
+    width: 85%;
+    font-size: 13px;
+  }
+
+  .hero-action {
+    gap: 8px;
+    font-size: 14px;
+  }
+
+  .hero-connect,
+  .hero-resume {
+    padding: 10px 30px; /* Further reduce padding on very small screens */
+  }
+}
